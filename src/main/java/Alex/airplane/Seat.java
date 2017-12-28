@@ -8,5 +8,11 @@ public class Seat {
 	public Seat (String seatInLine,int line ){
 		this.seatInLine=seatInLine;
 		this.line=line;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "Seat [seatInLine=" + seatInLine + ", line=" + line + "]";
+	}
+	
 }

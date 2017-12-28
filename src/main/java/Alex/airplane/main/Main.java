@@ -28,8 +28,9 @@ public class Main {
 		
 		Seat seat1 = new Seat("A", 44);
 		
+		Business business = new Business("Vasa", "Cuk",22, "Banna");
 		
-		
+		business.buyBisinessClassTicket(seat1);
 	}
 
 }
