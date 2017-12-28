@@ -11,10 +11,13 @@ public class Fighter extends Plane {
 	
 	Map <String,Integer> map =new HashMap<String, Integer>();
 	private int numOfCannons;
+	private int numOfRockets;
 	
-	public Fighter(String modelName, String modelSerialNamber, int weght, String color ,int speed,double tank ,int numOfCannons) {
+	
+	public Fighter(String modelName, String modelSerialNamber, int weght, String color ,int speed,double tank ,int numOfCannons,int numOfRockets) {
 		super(modelName, modelSerialNamber, weght, color , speed,tank);
 		this.numOfCannons=numOfCannons;
+		this.numOfRockets=numOfRockets;
 	}
 	
 	@Override
@@ -48,6 +51,15 @@ public class Fighter extends Plane {
 	public void setNumOfCannons(int numOfCannons) {
 		this.numOfCannons = numOfCannons;
 	}
+	
+	public int getNumOfRockets() {
+		return numOfRockets;
+	}
+
+	public void setNumOfRockets(int numOfRockets) {
+		this.numOfRockets = numOfRockets;
+	}
+
 	@Override
 	public String toString() {
 		return "Fighter [map=" + map + ", numOfCannons=" + numOfCannons + "]";

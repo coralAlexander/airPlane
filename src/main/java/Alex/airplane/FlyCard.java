@@ -2,12 +2,20 @@ package Alex.airplane;
 
 import java.util.Date;
 
+/**
+ *  This class create card about fly information .
+ * @param distanation - on map for example Tel-Aviv . 
+ * @param range - how many miles  
+ * @param timeInFly - how many time take a fly .
+ */
+
 public class FlyCard {
 	
 	String distanation;
 	int range ;
 	double timeInFly;
 
+	
 	public FlyCard(String distanation,int range,double timeInFly) {
 		this.distanation=distanation;
 		this.range=range;
