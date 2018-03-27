@@ -1,6 +1,8 @@
 package Alex.airplane.main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import Alex.airplane.FlyCard;
@@ -27,10 +29,21 @@ public class Main {
 		map.forEach((key, value) -> System.out.println(key + " : " + value));*/
 		
 		Seat seat1 = new Seat("A", 44);
+		Seat seat2 = new Seat("B", 55);
+		Seat seat3 = new Seat("C", 55);
+		
+		List<Seat> seatsList = new ArrayList<Seat>(); 
+		seatsList.add(seat1);
+		seatsList.add(seat2);
+		seatsList.add(seat3);
+		
+		System.out.println(seatsList);
 		
 		Business business = new Business("Vasa", "Cuk",22, "Banna");
 		
-		business.buyBisinessClassTicket(seat1);
+		business.buyBisinessClassTicket(seatsList,business);
+		
+		
 	}
 
 }
